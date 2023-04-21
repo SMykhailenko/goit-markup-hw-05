@@ -71,7 +71,7 @@
   color: #ffffff;
 }
 
-button:hover,
+.button:hover,
 .button:focus {
   color: #ffffff;
   background: #404bbf;
