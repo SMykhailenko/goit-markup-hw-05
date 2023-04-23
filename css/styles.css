@@ -256,6 +256,8 @@ p {
   margin-right: auto;
 }
 
+/* Modal window */
+
 /**
   |============================
   | Section 3
@@ -579,12 +581,16 @@ p {
   height: 100%;
   padding: 40px 32px;
 
+  overflow: auto;
   transform: translateY(100%);
   transition: transform var(--cubic-hover);
   color: #f4f4fd;
   background: #4d5ae5;
 }
 
+.img-block {
+  display: block;
+}
 .card-box {
   position: relative;
   overflow: hidden;
