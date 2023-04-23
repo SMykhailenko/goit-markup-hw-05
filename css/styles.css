@@ -535,71 +535,6 @@ p {
   |============================
 *
 /* logo placering */
-.portfolio-top {
-  margin-bottom: 96px;
-}
-
-.btn-top {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
-.click {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
-}
-
-.photo-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.pictures {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
-.pictures-list {
-  width: calc((100% - 48px) / 3);
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 40px 32px;
-
-  overflow: auto;
-  transform: translateY(100%);
-  transition: transform var(--cubic-hover);
-  color: #f4f4fd;
-  background: #4d5ae5;
-}
-
-.img-block {
-  display: block;
-}
-.card-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.pictures-list:hover .overlay {
-  transform: translateY(0);
-}
-
 .button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -649,4 +584,95 @@ p {
 .card-hf:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-top {
+  margin-bottom: 96px;
+}
+
+.btn-top {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.click {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.pictures-list {
+  width: calc((100% - 48px) / 3);
+}
+.overlay {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform var(--cubic-hover);
+  color: #f4f4fd;
+  background: #4d5ae5;
+}
+
+.img-block {
+  display: block;
+}
+.card-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.over:hover .overlay,
+.over:focus .overlay {
+  transform: translateY(0);
+}
+
+/**
+  |============================
+  | Modal styles
+  |============================
+*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background: rgba(46, 47, 66, 0.4);
+}
+.modal {
+}
+.modal-btn {
+}
+.modal-icon {
 }
