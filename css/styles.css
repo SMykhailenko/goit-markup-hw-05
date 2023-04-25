@@ -325,7 +325,6 @@ p {
 
 .team-item-symbol:hover,
 .team-item-symbol:focus {
-  border-radius: 50%;
   background-color: #404bbf;
 }
 
@@ -720,9 +719,11 @@ p {
   height: 24px;
   border-radius: 50%;
   border: none;
+  background-color: #e7e9fc;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+  fill: #ffffff;
 }
