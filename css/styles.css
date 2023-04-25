@@ -720,6 +720,10 @@ p {
   border-radius: 50%;
   border: none;
   background-color: #e7e9fc;
+
+  transition-property: color, background;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-hover);
 }
 
 .modal-btn:hover,
