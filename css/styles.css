@@ -101,6 +101,11 @@ p {
   color: #404bbf;
   background-color: #404bbf;
 }
+.current::after,
+.current {
+  color: #404bbf;
+}
+
 .helper-components:hover,
 .helper-components:focus {
   color: #404bbf;
